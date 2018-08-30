@@ -1,0 +1,111 @@
+
+#deletabtn{
+    display: none;
+}
+
+.pyg_view {
+    padding: 50px 15px;
+    .address {
+        .addre_title {
+            font-size: 14px;
+            color: #666;
+        }
+        .address_content {
+            background-color: #fff;
+            display: flex;
+            padding: 10px 0;
+            span {
+                flex: 1;
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .addr_des {
+                flex: 7;
+                .ad_title {
+                    font-size: 18px;
+                }
+                .ad_content {
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+        }
+    }
+    .order {
+        padding: 40px 0;
+        .or_title {
+            font-size: 14px;
+            color: #666;
+        }
+        .order_content {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .goods_list {
+        margin-top: 40px;
+        .g_title {
+            font-size: 14px;
+            color: #666;
+        }
+        .gg_content {
+            background-color: #fff;
+            ul {
+                
+                li {
+                    display: flex;
+                    padding: 10px 0;
+                    .checkbox {
+                        flex: 1;
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        input {
+                            position: static;
+                        }
+                    }
+                    .g_img {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .box_r{
+                        flex: 3;
+                        display: flex;
+                        flex-direction: column;
+                        .goods_name{
+                            font-size: 14px;
+                            color: #666;
+                        }
+                        .nums{
+                            padding: 10px 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            .mui-numbox{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#pyg_body.edit_status {
+    #deletabtn{
+        display: block;
+    }
+    .checkbox{
+        display: flex;
+    }
+    .mui-numbox{
+        display: block;
+    }
+}

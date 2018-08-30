@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lib/mui/css/mui.css">
+    <link rel="stylesheet" href="/lib/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+
+<body id="pyg_body">
+    <header id="header" class="mui-bar mui-bar-nav">
+
+        <h1 class="mui-title">购物车</h1>
+        <button id="deletabtn" type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-left">删除</button>
+        <button id="btnone" type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right">编辑</button>
+    </header>
+    <div class="pyg_view">
+        <!-- 地址 -->
+        <div class="address">
+            <div class="addre_title">
+                配送地址
+            </div>
+            <div class="address_content">
+                <span class="fa fa-map-marker"></span>
+                <div class="addr_des">
+                    <div class="ad_title">默认地址</div>
+                    <div class="ad_content">中国台湾钓鱼岛</div>
+                </div>
+            </div>
+        </div>
+        <!--  订单总价 -->
+        <div class="order">
+            <div class="or_title">
+                订单
+            </div>
+            <div class="order_content">
+                <div class="picall">
+                    总价: ￥
+                    <span class="money">120</span>
+                </div>
+                <a id="addbtn" href="javascript:;" class="mui-btn mui-btn-danger">生成订单</a>
+            </div>
+        </div>
+        <!-- 商品 -->
+        <div class="goods_list">
+            <div class="g_title">
+                订单
+            </div>
+            <div class="gg_content">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pyg_footer">
+        <div class="menu">
+            <a href="/index.html">
+                <span class="fa fa-home"></span>
+                <span class="link_name">首页</span>
+            </a>
+            <a href="/pages/category.html">
+                <span class="fa fa-list-ul"></span>
+                <span class="link_name">分类</span>
+            </a>
+            <a href="javascript:;">
+                <span class="fa fa-shopping-cart"></span>
+                <span class="link_name">购物车</span>
+            </a>
+            <a href="javascript:;">
+                <span class="fa fa-user"></span>
+                <span class="link_name">我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="/lib/mui/js/mui.js"></script>
+<script src="/lib/arttemplate/template-web.js"></script>
+<script src="/lib/zepto/zepto.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/cart.js"></script>
+<script type="text/template" id="temp">
+
+    {{each data value index}}
+    <li data-obj="{{value}}">
+        <!-- 复选框 -->
+        <div class="checkbox">
+            <div class="mui-input-row mui-checkbox mui-left">
+                <input name="c_box" value="Item" type="checkbox">
+            </div>
+        </div>
+        <!-- 图片 -->
+        <div class="g_img">
+            <img src="{{value.goods_small_logo}}" alt="">
+        </div>
+        <!-- 商品名称 -->
+        <div class="box_r">
+            <div class="goods_name mui-ellipsis-2">
+                {{value.goods_name}}
+            </div>
+            <!-- 商品价格 -->
+            <div class="nums">
+                <div class="goods_price">¥{{value.goods_price}}</div>
+                <!-- 数字输入框  -->
+                <div class="mui-numbox" data-numbox-step='1' data-numbox-min='1' data-numbox-max='{{value.goods_number}}'>
+                    <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                    <input class="mui-numbox-input" value="{{value.amount}}" type="number" />
+                    <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+                </div>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+
+</script>
+
+</html>

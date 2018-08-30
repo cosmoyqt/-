@@ -1,0 +1,99 @@
+.pyg_view {
+    padding: 10px;
+    background-color: #fff;
+    .pyg_lunbo {
+        .slider {}
+    }
+    .goods_name {
+        padding: 5px 0;
+        font-size: 16px;
+    }
+    .goods_price {
+        color: #ffa500;
+        font-size: 25px;
+        padding: 5px 0;
+    }
+    .goods_send {
+        ul {
+            font-size: 13px;
+            li {
+                padding: 10px 0;
+                border-bottom: 1px solid pink;
+                display: flex;
+                span:first-child {
+                    flex: 1;
+                }
+                span:last-child {
+                    flex: 2;
+                }
+            }
+        }
+    }
+    #item1 {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    }
+    #item2 {
+        ul {
+            background-color: #efeff4;
+            padding: 5px;
+            li {
+                .gg_title {
+                    font-weight: 600;
+                    padding: 5px;
+                    font-size: 16px;
+                    border-bottom: 1px solid #000;
+                }
+                .gg_content {
+                    padding: 5px;
+                    font-size: 14px;
+                    display: flex;
+                    span:first-child {
+                        flex: 1;
+                    }
+                    span:last-child {
+                        flex: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pyg_tool {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    a {
+        padding-top: 2px;
+        border-right: 1px solid #ccc;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+        color: #000;
+        .fa {
+            font-size: 16px;
+        }
+    }
+    a:last-child {
+        border-right: none;
+    }
+    .buy_btn {
+        background-color: #ffaa00;
+        color: #fff;
+    }
+    .add_btn {
+        background-color: #ff6600;
+        color: #fff;
+    }
+}

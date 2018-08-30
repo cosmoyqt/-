@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wait::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 1000;
+}
+
+.wait::after {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f110";
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  font-size: 74px;
+  margin-left: -37px;
+  z-index: 1001;
+  color: aqua;
+}
+
+body {
+  padding: 45px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.pyg_header {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.pyg_view {
+  height: 100%;
+  overflow: scroll;
+}
+
+.pyg_footer {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.pyg_footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_footer .menu a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3px;
+}
+
+.pyg_footer .menu a .fa {
+  font-size: 22px;
+}
+
+.pyg_footer .menu a .link_name {
+  font-size: 14px;
+}

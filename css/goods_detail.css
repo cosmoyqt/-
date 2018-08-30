@@ -1,0 +1,130 @@
+.pyg_view {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.pyg_view .goods_name {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.pyg_view .goods_price {
+  color: #ffa500;
+  font-size: 25px;
+  padding: 5px 0;
+}
+
+.pyg_view .goods_send ul {
+  font-size: 13px;
+}
+
+.pyg_view .goods_send ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_view .goods_send ul li span:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.pyg_view .goods_send ul li span:last-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.pyg_view #item1 * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pyg_view #item2 ul {
+  background-color: #efeff4;
+  padding: 5px;
+}
+
+.pyg_view #item2 ul li .gg_title {
+  font-weight: 600;
+  padding: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+}
+
+.pyg_view #item2 ul li .gg_content {
+  padding: 5px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_view #item2 ul li .gg_content span:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.pyg_view #item2 ul li .gg_content span:last-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.pyg_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_tool a {
+  padding-top: 2px;
+  border-right: 1px solid #ccc;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #000;
+}
+
+.pyg_tool a .fa {
+  font-size: 16px;
+}
+
+.pyg_tool a:last-child {
+  border-right: none;
+}
+
+.pyg_tool .buy_btn {
+  background-color: #ffaa00;
+  color: #fff;
+}
+
+.pyg_tool .add_btn {
+  background-color: #ff6600;
+  color: #fff;
+}

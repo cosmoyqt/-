@@ -1,0 +1,38 @@
+#item1 {
+  padding: 20px;
+}
+
+#item1 ul {
+  background-color: #fff;
+  height: 65px;
+}
+
+#item1 ul li {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#item1 ul li .bt {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  overflow: hidden;
+}
+
+#item1 ul li .bt .create {
+  font-size: 16px;
+}
+
+#item1 ul li .bt .bb {
+  display: block;
+}
+
+#item1 ul li .price {
+  color: red;
+  padding-right: 20px;
+}

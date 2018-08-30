@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* 
+  rem 屏幕适配
+  1 公式 动态的设置html的fontsize
+  2 设计稿=> 基础值 要适配的屏幕的宽度  fontsize
+      基础值=>100px
+      要适配的屏幕的宽度 当前的屏幕的宽度
+      设计稿 没有  宽度  375px
+      fontsize
+  3 可以加入一段js 来实现!!!!
+   */
+body {
+  line-height: normal;
+}
+
+.pyg_view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.pyg_view .left {
+  width: 1rem;
+  overflow: hidden;
+  background-color: #cccccc;
+}
+
+.pyg_view .left ul li {
+  font-size: 0.16rem;
+  text-align: center;
+  padding: 0.05rem 0;
+}
+
+.pyg_view .left ul .active {
+  background-color: #fff;
+  border-left: 3px solid #0094ff;
+}
+
+.pyg_view .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: scroll;
+  background-color: #fff;
+}
+
+.pyg_view .right .goods_grund {
+  font-size: 0.14rem;
+}
+
+.pyg_view .right .goods_grund .gg_title {
+  color: #0094ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 15px;
+}
+
+.pyg_view .right .goods_grund .gg_title span:first-child {
+  padding: 0.05rem;
+}
+
+.pyg_view .right .goods_grund .gg_title span:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 1px;
+  background-color: #000;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pyg_view .right .goods_grund ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pyg_view .right .goods_grund ul li {
+  width: 33.33%;
+  text-align: center;
+}
+
+.pyg_view .right .goods_grund ul li a {
+  color: #000;
+}
+
+.pyg_view .right .goods_grund ul li a img {
+  width: 60%;
+  margin: 0 auto;
+}

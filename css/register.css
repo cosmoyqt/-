@@ -1,0 +1,33 @@
+.pyg_view .reg_from {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.pyg_view .reg_from input {
+  font-size: 14px;
+}
+
+.pyg_view .reg_from .code-row {
+  position: relative;
+}
+
+.pyg_view .reg_from .code-row #code_btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: auto;
+}
+
+.pyg_view .btn_tool {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.pyg_view .btn_tool button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 0;
+}
